@@ -1,0 +1,161 @@
+{% extends 'parent/base.html' %}
+{% load static %}
+{% block title %}تکمیل سفارش{% endblock %}
+
+{% block head %}
+<style>
+  .order-page {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .order-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .cart-summary, .order-form {
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
+    padding: 1.5rem;
+    transition: all 0.2s;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-right: 4px solid #ff6b6b;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+    color: #1e2a3a;
+  }
+  .cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eef2f6;
+  }
+  .cart-item-name {
+    font-weight: 500;
+  }
+  .cart-item-price {
+    font-family: monospace;
+    background: #f1f5f9;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+  }
+  .cart-total {
+    margin-top: 1rem;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-top: 2px dashed #ddd;
+    padding-top: 1rem;
+  }
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2c3e4e;
+  }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #dce4ec;
+    border-radius: 24px;
+    font-size: 1rem;
+    transition: 0.2s;
+    box-sizing: border-box;
+  }
+  .form-group input:focus {
+    outline: none;
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 3px rgba(255,107,107,0.1);
+  }
+  .btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a5a);
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 0.5rem;
+  }
+  .btn-submit:hover {
+    transform: scale(0.98);
+    background: #ee5a5a;
+  }
+  @media (max-width: 800px) {
+    .order-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .cart-summary, .order-form {
+      padding: 1rem;
+    }
+    .section-title {
+      font-size: 1.2rem;
+    }
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="order-page">
+  <div class="order-grid">
+    <!-- سبد خرید کاربر -->
+    <div class="cart-summary">
+      <h2 class="section-title">🛒 محصولات شما</h2>
+      {% if cart|length %}
+        <ul class="cart-items">
+          {% for item in cart %}
+            <li class="cart-item">
+              <span class="cart-item-name">{{ item.quantity }} × {{ item.product.name }}</span>
+              <span class="cart-item-price">{{ item.price }} تومان</span>
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="cart-total">
+          جمع کل: {{ cart.get_total_price }} تومان
+        </div>
+      {% else %}
+        <p style="color: gray;">سبد خرید شما خالی است.</p>
+      {% endif %}
+    </div>
+
+    <!-- فرم گیرنده -->
+    <div class="order-form">
+      <h2 class="section-title">📦 مشخصات گیرنده</h2>
+      <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+          <div class="form-group">
+            {{ field.label_tag }}
+            {{ field }}
+            {% if field.errors %}
+              <div class="error">{{ field.errors }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+        <button type="submit" class="btn-submit">✓ تایید و ادامه به پرداخت</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends  'parent/base.html' %}
+{% load static %}
+{% block title %}cart{% endblock title %}
+
+{% block content %}
+    {% if success %}
+        <div class="success">
+            <p>پرداخت با موفقیت انجام شد</p>
+            <p>{{ref_number}}:شماره پیگیری</p>
+            <p>{{order_id}}:شماره سفازش</p>
+        </div>
+
+    {% else %}
+        <div class="failure">
+            <p>پرداخت ناموفق بود</p>
+        </div>
+    {% endif %}
+
+    <a class="back-btn" href="{% url "shop:product_list" %}">بازگشت به صفحه محصولات<a>
+{% endblock%}

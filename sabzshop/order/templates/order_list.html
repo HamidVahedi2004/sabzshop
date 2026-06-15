@@ -1,0 +1,160 @@
+{% extends 'parent/base.html' %}
+{% load static %}
+{% block title %}سفارشات من{% endblock %}
+
+{% block head %}
+<style>
+  .orders-page {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .page-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .page-header h1 {
+    font-size: 2rem;
+    color: #1e2a3a;
+  }
+  .orders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .order-card {
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
+    overflow: hidden;
+    border: 1px solid #eef2f6;
+  }
+  .order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+  }
+  .card-header {
+    background: #f9fafc;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #eef2f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .order-id {
+    font-weight: 800;
+    background: #e9ecef;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+  }
+  .order-status {
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: #eef2ff;
+  }
+  .status-paid {
+    background: #e0f7e8;
+    color: #2e7d32;
+  }
+  .status-unpaid {
+    background: #ffe6e5;
+    color: #c0392b;
+  }
+  .card-body {
+    padding: 1rem 1.2rem;
+  }
+  .order-date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+  }
+  .order-total {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+  .card-footer {
+    padding: 0.8rem 1.2rem 1.2rem;
+    text-align: left;
+  }
+  .btn-detail {
+    background: none;
+    border: 1px solid #ff6b6b;
+    padding: 8px 16px;
+    border-radius: 40px;
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: 0.2s;
+    display: inline-block;
+  }
+  .btn-detail:hover {
+    background: #ff6b6b;
+    color: white;
+  }
+  .empty-orders {
+    text-align: center;
+    padding: 4rem;
+    background: #f9fafb;
+    border-radius: 40px;
+    color: #5b6e8c;
+  }
+  @media (max-width: 640px) {
+    .orders-grid {
+      grid-template-columns: 1fr;
+    }
+    .page-header h1 {
+      font-size: 1.6rem;
+    }
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="orders-page">
+  <div class="page-header">
+    <h1>📦 سفارشات من</h1>
+  </div>
+
+  {% if orders %}
+    <div class="orders-grid">
+      {% for order in orders %}
+        <div class="order-card">
+          <div class="card-header">
+            <span class="order-id">#{{ order.id }}</span>
+            <span class="order-status {% if order.paid %}status-paid{% else %}status-unpaid{% endif %}">
+              {% if order.paid %}پرداخت موفق{% else %}پرداخت نشده{% endif %}
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="order-date">
+              📅 تاریخ ثبت: {{ order.created|date:"Y/m/d" }}
+            </div>
+            <div class="order-total">
+              مبلغ کل: {{ order.get_finel_cost }} تومان
+            </div>
+            <div style="margin-top: 8px; font-size:0.8rem; color:#6c757d;">
+              {{ order.items.count }} محصول
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'order:order_detail' order.id %}" class="btn-detail">مشاهده جزییات ←</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="empty-orders">
+      <p>🛍️ هنوز سفارشی ثبت نکرده‌اید.</p>
+      <a href="{% url 'shop:product_list' %}" class="btn-detail" style="margin-top: 1rem;">رفتن به فروشگاه</a>
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

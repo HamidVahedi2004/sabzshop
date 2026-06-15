@@ -1,0 +1,95 @@
+{% extends  'parent/base.html' %}
+{% load static %}
+{% block title %}product list{% endblock title %}
+
+
+
+{% block content %}
+    <div class="header">
+        {% if category %}
+            <h1>لیست دسته بندی ها بر اساس {{category}}</h1>
+        {% else %}
+            <h1>لیست دسته بندی محصولات</h1>
+        {% endif %}
+    </div>
+
+    <div class="container">
+        {% comment %} <div class="small-div">
+            <li class="category"><a class="text" href="{% url "shop:product_list" %}">All</a></li>
+            <br>
+            {% for ct in categoryes %}
+                <li class="category"><a class="text" href="{{ ct.get_absolute_url }}">{{ct.name}}</a></li>
+                <br>
+            {% endfor %}
+        </div> {% endcomment %}
+        <div class="small-div">
+                                             
+            <h3 class="sidebar-title">دسته‌بندی</h3>
+
+            <ul class="category-list">
+
+                <li class="category">
+                    <a class="text {% if not category %}active{% endif %}"
+                    href="{% url 'shop:product_list' %}">
+                    همه محصولات
+                    </a>
+                </li>
+
+                {% for ct in categoryes %}
+                    <li class="category">
+                        <a class="text {% if category and category.slug == ct.slug %}active{% endif %}"
+                        href="{{ ct.get_absolute_url }}">
+                        {{ ct.name }}
+                        </a>
+                    </li>
+                {% endfor %}
+
+            </ul>
+
+            <hr>
+
+            <h3 class="sidebar-title">فیلتر</h3>
+
+            <form method="get" class="filter-form">
+
+                <label class="filter-item">
+                    <input class="check-input" type="checkbox" name="available" value="1"
+                    {% if request.GET.available == "1" %}checked{% endif %}>
+                    فقط کالاهای موجود
+                </label>
+
+                <label class="filter-item">
+                    <input  class="check-input"   type="checkbox" name="gender" value="مردانه"
+                    {% if request.GET.gender == "مردانه" %}checked{% endif %}>
+                    مردانه
+                </label>
+
+                <label class="filter-item">
+                    <input class="check-input"  type="checkbox" name="gender" value="زنانه"
+                    {% if request.GET.gender == "زنانه" %}checked{% endif %}>
+                    زنانه
+                </label>
+
+                <button type="submit" class="filter-btn">اعمال فیلتر</button>
+
+            </form>
+
+
+        </div>
+
+        <div class="large-div">
+            {% for product in products %}
+                <a href="{{product.get_absolute_url}}">
+                <div class="product">
+                    <img class="pic" src="{{ product.images.first.image_field.url }}">
+                    <div class="price">
+                        <span class="orginal-price">{{ product.price }}</span>
+                        <br>
+                        <span class="discount-price">{{ product.new_price }}</span>
+                    </div>
+                </div>
+                </a>
+            {% endfor %}    
+        </div>
+    </div>
+{% endblock %}

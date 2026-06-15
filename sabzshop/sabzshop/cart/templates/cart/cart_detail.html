@@ -1,0 +1,112 @@
+{% extends  'parent/base.html' %}
+{% load static %}
+{% block title %}cart{% endblock title %}
+
+
+{% block content %}
+    <div class="cart-header">
+        <h1> سبد خرید</h1>
+    </div>
+   <div class="cart-widget">
+        {% for item in cart %}
+            <div class="product-item" data-item-id="{{ item.product.id }}">
+                <a href="{% url "shop:product_detail" item.product.id  item.product.slug %}">
+                    <img src="{{ item.product.images.first.image_field.url }}" class="product-image">
+                </a>
+                <div class="product-info">
+                    <h3><a href="{% url "shop:product_detail" item.product.id  item.product.slug %}">نام محصول:{{ item.product.name }}</a></h3>
+                    <P>تعداد:<span id="item-quantity-{{ item.product.id }}">{{ item.quantity }}</span></p>
+                    <P>قیمت:<span>{{ item.price }}</span></p>
+                    <P>قیمت کل:<span id="item-total-{{item.product.id}}">{{ item.total }}</span></p>
+                </div>
+                <div class="action">
+                    <div class="quantity-add">+</div>
+                    <div class="quantity-decrease">-</div>
+                    <div class="quantity-remove">🗑️</div>
+                </div>
+            </div>
+        {% endfor %}
+
+
+        <div class="total-price">
+            <p>هزینه کل:<span id="item-total-price"> {{cart.get_total_price}}</span></p>
+            <p>هزینه ارسال:<span id="item-post-price"> {{cart.get_post_price}}</span></p>
+            <p>مبلغ قابل پرداخت :<span id="item-final-price"> {{cart.get_final_price}}</span></p>
+        </div>
+
+        <div class="checkout-button">
+            <div class="continue-btn"><a href="{% url "order:verify_phone" %}" >ادامه خرید</a></div>
+            <div class="back-btn"><a href="{% url "shop:product_list" %}">بازگشت به لیست محصولات</a></div>
+        </div>
+   </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i=0;i<cookies.length;i++){
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0,name.length+1) === (name+'=')){
+                    cookieValue = decodeURIComponent(cookie.substring(name.length+1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+
+    $(document).ready(function(){
+
+        $('.quantity-add').on('click', function(){
+            updateQuantity($(this).closest('.product-item').data('item-id'), 'add')
+        });
+
+        $('.quantity-decrease').on('click', function(){
+            updateQuantity($(this).closest('.product-item').data('item-id'), 'decrease')
+        });
+
+        $('.quantity-remove').on('click', function(){
+            removeItem($(this).closest('.product-item').data('item-id'))
+        });
+
+        function updateQuantity(itemid, action){
+            $.ajax({
+                type:'POST',
+                url:'{% url "cart:update_quantity" %}',
+                headers: {'X-CSRFToken': getCookie('csrftoken')},
+                data: { 'item_id': itemid, 'action': action },
+                success: function(data){
+                    if(data.success){
+                        $('#item-quantity-'+itemid).text(data.quantity);
+                        $('#item-total-'+itemid).text(data.total);
+                        $('#item_count').text(data.item_count + " items");
+                        $('#item-total-price').text(data.total_price);
+                        $('#item-final-price').text(data.final_price);
+                    }
+                }
+            });
+        }
+
+        function removeItem(itemid){
+            $.ajax({
+                type:'POST',
+                url:'{% url "cart:remove_item" %}',
+                headers: {'X-CSRFToken': getCookie('csrftoken')},
+                data: { 'item_id': itemid },
+                success: function(data){
+                    if(data.success){
+                        $(`.product-item[data-item-id=${itemid}]`).remove();
+                        $('#item_count').text(data.item_count + " items");
+                        $('#item-total-price').text(data.total_price);
+                        $('#item-final-price').text(data.final_price);
+                    }
+                }
+            });
+        }
+
+    });
+    </script>
+
+{% endblock %}

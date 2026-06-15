@@ -1,0 +1,1575 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 3,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 3,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 3,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 3,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 2,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 2,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 2,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 2,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add دسته بندی",
+        "content_type": 7,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change دسته بندی",
+        "content_type": 7,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete دسته بندی",
+        "content_type": 7,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view دسته بندی",
+        "content_type": 7,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add محصول",
+        "content_type": 9,
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change محصول",
+        "content_type": 9,
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete محصول",
+        "content_type": 9,
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view محصول",
+        "content_type": 9,
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add عکس",
+        "content_type": 8,
+        "codename": "add_image"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change عکس",
+        "content_type": 8,
+        "codename": "change_image"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete عکس",
+        "content_type": 8,
+        "codename": "delete_image"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view عکس",
+        "content_type": 8,
+        "codename": "view_image"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add productfeature",
+        "content_type": 10,
+        "codename": "add_productfeature"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change productfeature",
+        "content_type": 10,
+        "codename": "change_productfeature"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete productfeature",
+        "content_type": 10,
+        "codename": "delete_productfeature"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view productfeature",
+        "content_type": 10,
+        "codename": "view_productfeature"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add orderitem",
+        "content_type": 12,
+        "codename": "add_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change orderitem",
+        "content_type": 12,
+        "codename": "change_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete orderitem",
+        "content_type": 12,
+        "codename": "delete_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view orderitem",
+        "content_type": 12,
+        "codename": "view_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add order",
+        "content_type": 11,
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change order",
+        "content_type": 11,
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete order",
+        "content_type": 11,
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view order",
+        "content_type": 11,
+        "codename": "view_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add shop user",
+        "content_type": 13,
+        "codename": "add_shopuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change shop user",
+        "content_type": 13,
+        "codename": "change_shopuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete shop user",
+        "content_type": 13,
+        "codename": "delete_shopuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view shop user",
+        "content_type": 13,
+        "codename": "view_shopuser"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "shop",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "shop",
+        "model": "image"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "shop",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "shop",
+        "model": "productfeature"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "order",
+        "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "order",
+        "model": "orderitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "account",
+        "model": "shopuser"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3gc222j5u5c2fumebo5e9qcd1zdr8glt",
+    "fields": {
+        "session_data": ".eJyrVkpOLCpRsqpWMgYRhaWJeSWZJZVKVka1OkpGqELGtUCxstSizLTM5MSSzPy8-OT8lFQlKyUzEwMLY2MlHaWCjPw8kICBpRkMKNUCAERCHm8:1wFSHy:kkcm1cJdwa_rMGIJQ9Wfw9T6GSs_alVyvCMlmRvU5B8",
+        "expire_date": "2026-05-06T07:46:26.496Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4td31blpcdlzvvng6bhowd6yd4hbkk2s",
+    "fields": {
+        "session_data": ".eJxVjMEOgyAQRP9lzw0JIAt47L3fYBYWqm2DqeKhMf57NfHiZQ7z3swKkaYK7QryiO9CpQ71B63ctht0tNS-W-Y0dQNDuzuXLlB8p3IAflF5jiKOpU5DEIciTjqLx8jpcz_dy0FPc7-vvbLSakJjneZIxiqUmLPMiOxDDjI3KqbGKUJ2urEGkzOcWEWvfAgatj9s8kDg:1vvE3U:WTVWTTo0mOOGLxtm6XVcvc2BELji7c-IXg2t00EB4ME",
+        "expire_date": "2026-03-11T12:31:52.380Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "dys5hrpvqcan9mhub0nbcjl7x7fy00os",
+    "fields": {
+        "session_data": ".eJxVyDEKgCAYBtC7fLODmWl6mRAz-hctsSDEu5djyxtehXe5wFaMnfNysVB5YGVjEP8S7bs7ZNrIu0IpLj6tARYzN1wYMBx7ij24MUpKNQ1ao71E7h5v:1wFSEq:KzU8F_Zfkzdim1Of9gIiDyuuxf693V-vNhJx_AZhs-Y",
+        "expire_date": "2026-05-06T07:43:12.549Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "g2lwrbr28n6sjn7weq7ibw45hh9ernfw",
+    "fields": {
+        "session_data": ".eJxVjDkOgzAURO_ya2RhG2-U6XMG9L1hJxEkYBRFiLsHJBqaKea9mRUcTgXaFdgRnwWHkssPWlbBe8ouQMt5XdcVfEPu027W21ZBh0tJ3TKHqcseWqBw6Sy6ZxgO4B849CNx41CmbMmhkJPO5D768Lqd7uUg4Zz2tWGKKo5SKM29Q6GYpDJGGqX0xkZLY8NcaDRD6TVvlJBBCx88c4YZazlsf2deR_c:1vvAnP:G6w3zq1LWY3UG0MzJV3Us0nGwAHV3XJPXTXlbeWJUWM",
+        "expire_date": "2026-03-11T09:03:03.041Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "l7oxn0n8jh5qlwpglbggpyfaohfjsnor",
+    "fields": {
+        "session_data": ".eJxVjk0OgyAQhe8y64YoIKDL7nsGMzBjtW0gRVw0xrtXEzdu3uJ7P3krBMwFuhXUId8FY5nKDzq13UBekdx21uNSxn6ZOfcTQQd1DRfoMbw5Hg69MD6TCCmWPHlxRMTpzuKRiD_3M3sZGHEe97YzvkbdmjAYbSr2WgbTVIbZO1M1npRhF5Cs1QMRKlS2DeSV1uwGT7bZR1Om86VU2x-8dUxQ:1wGuJd:jgXaSu-22NurYePotPbW3YFBnaC0cA_tGLdwlV6FUwE",
+        "expire_date": "2026-05-10T07:54:09.948Z"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 1,
+    "fields": {
+        "name": "پوشاک",
+        "slug": "poshak"
+    }
+},
+{
+    "model": "shop.category",
+    "pk": 2,
+    "fields": {
+        "name": "کفش",
+        "slug": "shoes"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "name": "تی شرت",
+        "slug": "t-shrt",
+        "description": "تی شرت  مردانه تاناکورایی اصل و وارداتی از کشور دوست و همسایه مالزی",
+        "inventory": 30,
+        "weight": 0,
+        "price": 25000,
+        "off": 3000,
+        "new_price": 22000,
+        "created": "2026-02-14T07:55:19.273Z",
+        "updated": "2026-02-25T13:12:52.780Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+        "category": 2,
+        "name": "کفش ملی مردانه",
+        "slug": "meli-shoes",
+        "description": "کفش ملی مردانه با رویه چرم ترکی محصول کشور ایران می باشد.",
+        "inventory": 15,
+        "weight": 0,
+        "price": 38000,
+        "off": 3000,
+        "new_price": 35000,
+        "created": "2026-02-14T12:47:20.349Z",
+        "updated": "2026-02-25T11:48:17.889Z"
+    }
+},
+{
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+        "category": 1,
+        "name": "شلوار نیم بگ زنانه",
+        "slug": "shalvar-zanane",
+        "description": "شلوار زنانه ترکیه ای با زاپ های بسیار زیبا و قشنگ",
+        "inventory": 20,
+        "weight": 160,
+        "price": 1989000,
+        "off": 0,
+        "new_price": 1989000,
+        "created": "2026-02-25T11:50:20.247Z",
+        "updated": "2026-02-25T13:12:32.662Z"
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "title": "تی شزت",
+        "image_field": "image_of_product/1752332947other_file_0-medium.jpg",
+        "description": "تی شرت اورجینال وارداتی",
+        "created": "2026-02-14T07:55:19.293Z"
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 2,
+    "fields": {
+        "product": 2,
+        "title": "کفش",
+        "image_field": "image_of_product/download.jpg",
+        "description": "کفش ملی چرم",
+        "created": "2026-02-14T12:47:20.354Z"
+    }
+},
+{
+    "model": "shop.image",
+    "pk": 3,
+    "fields": {
+        "product": 3,
+        "title": "شلوار بگ زنانه",
+        "image_field": "image_of_product/photo_2025-10-20_06-28-50-960x1000.jpg",
+        "description": "وراداتی",
+        "created": "2026-02-25T11:50:20.250Z"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 1,
+    "fields": {
+        "buyer": null,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-22T10:47:20.574Z",
+        "updated": "2026-04-22T10:47:20.574Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 2,
+    "fields": {
+        "buyer": null,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T06:44:42.978Z",
+        "updated": "2026-04-25T06:44:42.978Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 3,
+    "fields": {
+        "buyer": null,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T07:08:48.757Z",
+        "updated": "2026-04-25T07:08:48.757Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 4,
+    "fields": {
+        "buyer": null,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T08:11:53.217Z",
+        "updated": "2026-04-25T08:11:53.217Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 5,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T08:13:18.666Z",
+        "updated": "2026-04-25T08:13:18.671Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 6,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T08:36:31.495Z",
+        "updated": "2026-04-25T08:36:31.499Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 7,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T08:45:37.997Z",
+        "updated": "2026-04-25T08:45:38.001Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 8,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T08:46:28.414Z",
+        "updated": "2026-04-25T08:46:28.419Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 9,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T08:52:40.761Z",
+        "updated": "2026-04-25T08:52:40.766Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 10,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T08:55:09.925Z",
+        "updated": "2026-04-25T08:55:09.929Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 11,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T09:00:51.813Z",
+        "updated": "2026-04-25T09:00:51.817Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 12,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T09:01:41.422Z",
+        "updated": "2026-04-25T09:01:41.427Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 13,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T09:05:37.426Z",
+        "updated": "2026-04-25T09:05:37.430Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 14,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T09:13:59.451Z",
+        "updated": "2026-04-25T09:13:59.455Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 15,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T09:13:59.941Z",
+        "updated": "2026-04-25T09:13:59.950Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 16,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T09:14:01.403Z",
+        "updated": "2026-04-25T09:14:01.408Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 17,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T09:14:01.837Z",
+        "updated": "2026-04-25T09:14:01.847Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 18,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T09:14:02.002Z",
+        "updated": "2026-04-25T09:14:02.006Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 19,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Hamidreza",
+        "lastname": "Vahedi",
+        "phone": "09123832620",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T09:14:02.154Z",
+        "updated": "2026-04-25T09:14:02.158Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 20,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T11:40:33.989Z",
+        "updated": "2026-04-25T11:40:33.994Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 21,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T12:32:46.216Z",
+        "updated": "2026-04-25T12:32:46.221Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 22,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-25T12:34:27.446Z",
+        "updated": "2026-04-25T12:34:27.451Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 23,
+    "fields": {
+        "buyer": 11,
+        "firstname": "Gholamreza",
+        "lastname": "Forghani",
+        "phone": "09121115747",
+        "address": "tehran",
+        "postal_code": "1891657369",
+        "province": "khaniabad no",
+        "city": "tehran",
+        "created": "2026-04-26T07:54:09.929Z",
+        "updated": "2026-04-26T07:54:09.935Z",
+        "paid": false,
+        "status": "PR"
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 1,
+    "fields": {
+        "order": 1,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 1,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 2,
+    "fields": {
+        "order": 1,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 3,
+    "fields": {
+        "order": 2,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 4,
+    "fields": {
+        "order": 3,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 1,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 5,
+    "fields": {
+        "order": 4,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 6,
+    "fields": {
+        "order": 5,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 7,
+    "fields": {
+        "order": 6,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 8,
+    "fields": {
+        "order": 7,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 9,
+    "fields": {
+        "order": 8,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 10,
+    "fields": {
+        "order": 9,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 11,
+    "fields": {
+        "order": 9,
+        "product": 2,
+        "price": 35000,
+        "quantity": 1,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 12,
+    "fields": {
+        "order": 10,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 13,
+    "fields": {
+        "order": 10,
+        "product": 2,
+        "price": 35000,
+        "quantity": 1,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 14,
+    "fields": {
+        "order": 11,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 15,
+    "fields": {
+        "order": 11,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 16,
+    "fields": {
+        "order": 12,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 17,
+    "fields": {
+        "order": 12,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 18,
+    "fields": {
+        "order": 13,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 19,
+    "fields": {
+        "order": 13,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 20,
+    "fields": {
+        "order": 14,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 21,
+    "fields": {
+        "order": 14,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 22,
+    "fields": {
+        "order": 15,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 23,
+    "fields": {
+        "order": 15,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 24,
+    "fields": {
+        "order": 16,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 25,
+    "fields": {
+        "order": 16,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 26,
+    "fields": {
+        "order": 17,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 27,
+    "fields": {
+        "order": 17,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 28,
+    "fields": {
+        "order": 18,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 29,
+    "fields": {
+        "order": 18,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 30,
+    "fields": {
+        "order": 19,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 31,
+    "fields": {
+        "order": 19,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 32,
+    "fields": {
+        "order": 20,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 33,
+    "fields": {
+        "order": 20,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 34,
+    "fields": {
+        "order": 21,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 35,
+    "fields": {
+        "order": 21,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 36,
+    "fields": {
+        "order": 22,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 37,
+    "fields": {
+        "order": 22,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 38,
+    "fields": {
+        "order": 23,
+        "product": 3,
+        "price": 1989000,
+        "quantity": 3,
+        "weight": 160
+    }
+},
+{
+    "model": "order.orderitem",
+    "pk": 39,
+    "fields": {
+        "order": 23,
+        "product": 2,
+        "price": 35000,
+        "quantity": 2,
+        "weight": 0
+    }
+},
+{
+    "model": "account.shopuser",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$puhbpGus8Z9yUwsWguhY0l$Zq2+FL2xbG79zzwcKF4pIeXvAqjjh6RyJ8Qm/RWuyYc=",
+        "last_login": "2026-04-25T06:57:18.668Z",
+        "is_superuser": true,
+        "phone": "09121115747",
+        "first_name": "",
+        "last_name": "",
+        "address": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_join": "2026-04-25T06:56:42.423Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

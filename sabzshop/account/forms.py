@@ -1,0 +1,58 @@
+from .models import ShopUser
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django import forms
+
+
+class ShopUserCreationForm(UserCreationForm):
+    class Meta(UserCreationForm.Meta):
+        model= ShopUser
+        fields=('phone', 'first_name', 'last_name', 'address', 'is_staff', 'is_active', 'date_join')
+        
+        
+    def clean_phone(self):
+        phone= self.cleaned_data.get('phone')
+        
+        if self.instance.pk:
+            if ShopUser.objects.filter(phone=phone).exclude(self.instance.pk).exists():
+                raise forms.ValidationError("phone already exists")
+        else:
+            if ShopUser.objects.filter(phone=phone).exists():
+                raise forms.ValidationError("phone already exists")
+        
+        if not phone.isdigit():
+            raise forms.ValidationError('phone must be number')
+        
+        if not phone.startswith('09'):
+            raise forms.ValidationError("phone must start with 09")
+        
+        if len(phone) != 11:
+            raise forms.ValidationError("phone number must be 11 character")
+        
+        return phone
+        
+class ShopUserChangeForm(UserChangeForm):
+    class Meta(UserChangeForm.Meta):
+        model= ShopUser
+        fields=('phone', 'first_name', 'last_name', 'address', 'is_staff', 'is_active', 'date_join')
+        
+        
+    def clean_phone(self):
+        phone= self.cleaned_data.get('phone')
+        
+        if self.instance.pk:
+            if ShopUser.objects.filter(phone=phone).exclude(self.instance.pk).exists():
+                raise forms.ValidationError("phone already exists")
+        else:
+            if ShopUser.objects.filter(phone=phone).exists():
+                raise forms.ValidationError("phone already exists")
+        
+        if not phone.isdigit():
+            raise forms.ValidationError('phone must be number')
+        
+        if not phone.startswith('o9'):
+            raise forms.ValidationError("phone must start with number")
+        
+        if len(phone) != 11:
+            raise forms.ValidationError("phone number must be 11 character")
+        
+        return phone
